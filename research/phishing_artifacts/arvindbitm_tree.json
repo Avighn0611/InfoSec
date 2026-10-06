@@ -1,0 +1,55 @@
+{
+  "sha": "c59e6eb6c8d2ccb2069763fb15cc0c06312ffa81",
+  "url": "https://api.github.com/repos/arvindbitm/PhiUSIIL/git/trees/c59e6eb6c8d2ccb2069763fb15cc0c06312ffa81",
+  "tree": [
+    {
+      "path": "CharConRate.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60264ebf2afcba85e11e8397135197416b801730",
+      "size": 6583,
+      "url": "https://api.github.com/repos/arvindbitm/PhiUSIIL/git/blobs/60264ebf2afcba85e11e8397135197416b801730"
+    },
+    {
+      "path": "Entropy_Domain_URL.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca68eff0afe99d86612783a78314a3c431300fa2",
+      "size": 9110,
+      "url": "https://api.github.com/repos/arvindbitm/PhiUSIIL/git/blobs/ca68eff0afe99d86612783a78314a3c431300fa2"
+    },
+    {
+      "path": "IdentifyClassifiers.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8117aa1e6fc00d158f04b2c35eea566d050d4ab4",
+      "size": 26411,
+      "url": "https://api.github.com/repos/arvindbitm/PhiUSIIL/git/blobs/8117aa1e6fc00d158f04b2c35eea566d050d4ab4"
+    },
+    {
+      "path": "MainModel_SplitBased_OneTime90.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10d6c5eb4ac7474590d316009d728ff3a91b6a23",
+      "size": 95595,
+      "url": "https://api.github.com/repos/arvindbitm/PhiUSIIL/git/blobs/10d6c5eb4ac7474590d316009d728ff3a91b6a23"
+    },
+    {
+      "path": "URL_Info_WhoIS.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f21b2dc1ea52af23a2947ee10771c36ea43fe4da",
+      "size": 2515,
+      "url": "https://api.github.com/repos/arvindbitm/PhiUSIIL/git/blobs/f21b2dc1ea52af23a2947ee10771c36ea43fe4da"
+    },
+    {
+      "path": "WebPageTitleMatchScore.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cdd2b95bd1205be5429b0e5e1143f4a748d3e7e",
+      "size": 12397,
+      "url": "https://api.github.com/repos/arvindbitm/PhiUSIIL/git/blobs/9cdd2b95bd1205be5429b0e5e1143f4a748d3e7e"
+    }
+  ],
+  "truncated": false
+}

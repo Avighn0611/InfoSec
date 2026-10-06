@@ -1,0 +1,535 @@
+{
+  "sha": "b6c5b8a349d07745520f96596637d5825546c784",
+  "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/b6c5b8a349d07745520f96596637d5825546c784",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a3ea20754c4c08a29c1938848b2d89d60bd3997",
+      "size": 48,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/1a3ea20754c4c08a29c1938848b2d89d60bd3997"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fae575785a2cb93ed5a986b0269ed3c13adc5ca4",
+      "size": 1068,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/fae575785a2cb93ed5a986b0269ed3c13adc5ca4"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5901da473c1dc1b695393f117431151e2ecb23fb",
+      "size": 392,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/5901da473c1dc1b695393f117431151e2ecb23fb"
+    },
+    {
+      "path": "baselines",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e276a3ac0d785f36972d69d9d25df1ada895bee",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/8e276a3ac0d785f36972d69d9d25df1ada895bee"
+    },
+    {
+      "path": "baselines/gte",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "47def5b8da281f546929760c428900d2b19dc040",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/47def5b8da281f546929760c428900d2b19dc040"
+    },
+    {
+      "path": "baselines/gte/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "baselines/gte/gte_evaluation_results_1024_both.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15ede74698e0c821519421a022f16102c88985d2",
+      "size": 214875,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/15ede74698e0c821519421a022f16102c88985d2"
+    },
+    {
+      "path": "baselines/gte/gte_finetune.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caeef71b4f2a0535be975977f8d7bf52a50f432c",
+      "size": 4747,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/caeef71b4f2a0535be975977f8d7bf52a50f432c"
+    },
+    {
+      "path": "baselines/gte/gte_predict.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03250d7995666ebe2a1cf6b9d5354aa430d345ad",
+      "size": 3763,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/03250d7995666ebe2a1cf6b9d5354aa430d345ad"
+    },
+    {
+      "path": "baselines/gte/gte_tokenize.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f3c4ac8b7bb6654e5af1e31399f32b2d1d78acb",
+      "size": 4675,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/7f3c4ac8b7bb6654e5af1e31399f32b2d1d78acb"
+    },
+    {
+      "path": "baselines/llm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "876df724fb477667ede24518be81ffc7259b17b1",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/876df724fb477667ede24518be81ffc7259b17b1"
+    },
+    {
+      "path": "baselines/llm/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "baselines/llm/gpt-phishphresh_analysis.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71dc19e18526d97c90479f993e5c303a791630c4",
+      "size": 13451,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/71dc19e18526d97c90479f993e5c303a791630c4"
+    },
+    {
+      "path": "baselines/llm/llm_gemini_predict.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc591b48a6b32e99d4896f0fb706d0624f7213a5",
+      "size": 21731,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/fc591b48a6b32e99d4896f0fb706d0624f7213a5"
+    },
+    {
+      "path": "baselines/ngram",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f318bc72d8d8e332ee048412e9e6b27ae1865cc",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/8f318bc72d8d8e332ee048412e9e6b27ae1865cc"
+    },
+    {
+      "path": "baselines/ngram/feat_processing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "767dc857c365f306ab56a184012b936c690c2bc1",
+      "size": 8151,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/767dc857c365f306ab56a184012b936c690c2bc1"
+    },
+    {
+      "path": "baselines/ngram/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5745bc5d3cccab6afd28caf03e82d82d2718e371",
+      "size": 32,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/5745bc5d3cccab6afd28caf03e82d82d2718e371"
+    },
+    {
+      "path": "baselines/ngram/run.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5412b6f6c465f665447ed6e42d87dde966a88cc0",
+      "size": 2618,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/5412b6f6c465f665447ed6e42d87dde966a88cc0"
+    },
+    {
+      "path": "baselines/ngram/train.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78b606c5547ab3fc8674b3af0d47a8cee7e8a0f4",
+      "size": 4137,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/78b606c5547ab3fc8674b3af0d47a8cee7e8a0f4"
+    },
+    {
+      "path": "baselines/svm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a065a3e99b27c95b0a7c06e0612b647058a56769",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/a065a3e99b27c95b0a7c06e0612b647058a56769"
+    },
+    {
+      "path": "baselines/svm/svmmodeltrain.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "664cc023dea1915e3f554138c6631d1115756893",
+      "size": 25501,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/664cc023dea1915e3f554138c6631d1115756893"
+    },
+    {
+      "path": "baselines/svm/train_linearsvc_rtap.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d7ff010870525f114b5ff21878480cb68c5eb35",
+      "size": 21822,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/0d7ff010870525f114b5ff21878480cb68c5eb35"
+    },
+    {
+      "path": "benchmark",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "261c036bbe9850e73d7218362c1dcfd678bcd908",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/261c036bbe9850e73d7218362c1dcfd678bcd908"
+    },
+    {
+      "path": "benchmark/benchmark-2.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44a11ecc2a0ede2dbc38fc6822833babed086076",
+      "size": 404782,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/44a11ecc2a0ede2dbc38fc6822833babed086076"
+    },
+    {
+      "path": "benchmark/diversity_filter_using_levenshtein_distance.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "316d3efb9b1cb26510f6662aa8b025db3ca2deb5",
+      "size": 4926,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/316d3efb9b1cb26510f6662aa8b025db3ca2deb5"
+    },
+    {
+      "path": "benchmark/testsetCIs.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db45900c6b7e20e92a2ad8247a5e9111d86c9f8d",
+      "size": 10072,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/db45900c6b7e20e92a2ad8247a5e9111d86c9f8d"
+    },
+    {
+      "path": "dataset",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "695c62560402cd852288fa4ea8bff04f04e70278",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/695c62560402cd852288fa4ea8bff04f04e70278"
+    },
+    {
+      "path": "dataset/cleaning",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b3f4b80d615dc981b741a4ebbed0ede6387f1b31",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/b3f4b80d615dc981b741a4ebbed0ede6387f1b31"
+    },
+    {
+      "path": "dataset/cleaning/cleaning-ours.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16c329bd4cfca70c600bf854ad5caad940120cf0",
+      "size": 26932,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/16c329bd4cfca70c600bf854ad5caad940120cf0"
+    },
+    {
+      "path": "dataset/cleaning/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3b6e4bf2ed796192704e58d05d8f155fe9cf9040",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/3b6e4bf2ed796192704e58d05d8f155fe9cf9040"
+    },
+    {
+      "path": "dataset/cleaning/util/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "dataset/cleaning/util/cleaning.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e8c6eccc339190c87c298015aae31bcaac772ff",
+      "size": 32858,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/5e8c6eccc339190c87c298015aae31bcaac772ff"
+    },
+    {
+      "path": "dataset/cleaning/util/graph.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f30f61af8c1b86bd84c5ef3b8f2fc56d4e1824b",
+      "size": 23517,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/2f30f61af8c1b86bd84c5ef3b8f2fc56d4e1824b"
+    },
+    {
+      "path": "dataset/cleaning/util/stats.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f11a61617af5055e7d5b456fa5d339a7d0e256a4",
+      "size": 8319,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/f11a61617af5055e7d5b456fa5d339a7d0e256a4"
+    },
+    {
+      "path": "dataset/eda",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6b51bdb956cacf945b46b366d513cba6006a7f2c",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/6b51bdb956cacf945b46b366d513cba6006a7f2c"
+    },
+    {
+      "path": "dataset/eda/eda.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "daf3d91cf3a9aa2a37be78abf93f74cd44feba7a",
+      "size": 3277187,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/daf3d91cf3a9aa2a37be78abf93f74cd44feba7a"
+    },
+    {
+      "path": "dataset/pii",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e6b2ab83774f5865dd7e66ea4ef5135a7921702e",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/e6b2ab83774f5865dd7e66ea4ef5135a7921702e"
+    },
+    {
+      "path": "dataset/pii/data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "782f569cc73ae97a96480135ca4da4841b0bec17",
+      "size": 1856,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/782f569cc73ae97a96480135ca4da4841b0bec17"
+    },
+    {
+      "path": "dataset/pii/models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "469332194278a7c417eea43498b61120510a4241",
+      "size": 4625,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/469332194278a7c417eea43498b61120510a4241"
+    },
+    {
+      "path": "dataset/pii/pii.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aeb3a8d08608e5dc9346c3c8abd5bb4449fe0fe7",
+      "size": 5228,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/aeb3a8d08608e5dc9346c3c8abd5bb4449fe0fe7"
+    },
+    {
+      "path": "dataset/scrape",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bcf859f4cdec87bf9c7a4e720ce9404e55c4104a",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/bcf859f4cdec87bf9c7a4e720ce9404e55c4104a"
+    },
+    {
+      "path": "dataset/scrape/config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d401c9c5c0aa3d6a80d35a8d20bf8ed83f3cff8c",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/d401c9c5c0aa3d6a80d35a8d20bf8ed83f3cff8c"
+    },
+    {
+      "path": "dataset/scrape/config/config.ini",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "058029bb8e5204b2661fa0c743eba3e872d6176d",
+      "size": 1576,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/058029bb8e5204b2661fa0c743eba3e872d6176d"
+    },
+    {
+      "path": "dataset/scrape/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd89f810ca4c29f73c663c4723cd9d00430e2d87",
+      "size": 5137,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/fd89f810ca4c29f73c663c4723cd9d00430e2d87"
+    },
+    {
+      "path": "dataset/scrape/rtapdata",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7514dfc10cccc601d17fdeea92d8c66bd1c66d43",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/7514dfc10cccc601d17fdeea92d8c66bd1c66d43"
+    },
+    {
+      "path": "dataset/scrape/rtapdata/core",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "577b73022a6c72185a9e8cb962c9428c9a3f1611",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/577b73022a6c72185a9e8cb962c9428c9a3f1611"
+    },
+    {
+      "path": "dataset/scrape/rtapdata/core/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "dataset/scrape/rtapdata/core/exceptions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00b958a7f61bd37c56d474f10f97e9139c9b618a",
+      "size": 331,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/00b958a7f61bd37c56d474f10f97e9139c9b618a"
+    },
+    {
+      "path": "dataset/scrape/rtapdata/core/feed_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4941579e6e0f537eeeeccadaa084e9b57a12dfa5",
+      "size": 191,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/4941579e6e0f537eeeeccadaa084e9b57a12dfa5"
+    },
+    {
+      "path": "dataset/scrape/rtapdata/core/html.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81987bc9de562dd7eb876fed019dc4bbd37f0406",
+      "size": 778,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/81987bc9de562dd7eb876fed019dc4bbd37f0406"
+    },
+    {
+      "path": "dataset/scrape/rtapdata/core/statemachine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbbd33575802d39d334f604b954cea8c3aebc7e8",
+      "size": 1842,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/cbbd33575802d39d334f604b954cea8c3aebc7e8"
+    },
+    {
+      "path": "dataset/scrape/rtapdata/crawler.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f591761436fc4fcc01d76efa23586d6f5346f2b",
+      "size": 5933,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/3f591761436fc4fcc01d76efa23586d6f5346f2b"
+    },
+    {
+      "path": "dataset/scrape/rtapdata/feed.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cab022ab92f5ae07cc30584b53e447e480801fb8",
+      "size": 15720,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/cab022ab92f5ae07cc30584b53e447e480801fb8"
+    },
+    {
+      "path": "dataset/scrape/rtapdata/log.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4c78b8eac43dd8c6b23197f73694caba531a67a",
+      "size": 1887,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/a4c78b8eac43dd8c6b23197f73694caba531a67a"
+    },
+    {
+      "path": "dataset/scrape/rtapdata/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8226528f7596b08bcc063f413e2f60d475ee66c",
+      "size": 1150,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/c8226528f7596b08bcc063f413e2f60d475ee66c"
+    },
+    {
+      "path": "dataset/train-test-split",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "351f9bcf23a3f10ee1dcb0e857f249275e98a0ac",
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/trees/351f9bcf23a3f10ee1dcb0e857f249275e98a0ac"
+    },
+    {
+      "path": "dataset/train-test-split/apply_filters_to_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97e3bfdb27bef7cc01f190e50e4449b6676c78ad",
+      "size": 3363,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/97e3bfdb27bef7cc01f190e50e4449b6676c78ad"
+    },
+    {
+      "path": "dataset/train-test-split/collect_metrics_for_diversity_filtering.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c980a94215c96a0970d55e512c67764502884c5f",
+      "size": 15758,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/c980a94215c96a0970d55e512c67764502884c5f"
+    },
+    {
+      "path": "dataset/train-test-split/difficulty_filtering.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "782c19d1bb0750e18f032b0ae1cb211a4fcd921c",
+      "size": 8346,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/782c19d1bb0750e18f032b0ae1cb211a4fcd921c"
+    },
+    {
+      "path": "dataset/train-test-split/fetch_targets_to_scrape.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67b2a9488cf27ce74a49791126864bec116f0be7",
+      "size": 3469,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/67b2a9488cf27ce74a49791126864bec116f0be7"
+    },
+    {
+      "path": "dataset/train-test-split/final_data-diversity-filter-u8-h16-5-results.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e82f8bdac0d3cb231f11fe9c3ee9178b88006504",
+      "size": 189656,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/e82f8bdac0d3cb231f11fe9c3ee9178b88006504"
+    },
+    {
+      "path": "dataset/train-test-split/final_data-leakage-filter-u8-h16-2-results.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37edac5f410665d407947810886fc6b215772557",
+      "size": 469901,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/37edac5f410665d407947810886fc6b215772557"
+    },
+    {
+      "path": "dataset/train-test-split/lang_detect.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "952235f926873f34dc091efa591ee73ed627532f",
+      "size": 2892,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/952235f926873f34dc091efa591ee73ed627532f"
+    },
+    {
+      "path": "dataset/train-test-split/leakage_filtering.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2772c6b6fd38378a87854133173033c1a9851b6b",
+      "size": 7602,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/2772c6b6fd38378a87854133173033c1a9851b6b"
+    },
+    {
+      "path": "dataset/train-test-split/scrape_targets.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fff5923ecac13e44d3bd1972e51a70ae5db754e1",
+      "size": 8406,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/fff5923ecac13e44d3bd1972e51a70ae5db754e1"
+    },
+    {
+      "path": "dataset/train-test-split/search_target_domains.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc688b8b6d2464d664e2465327770e7424be915d",
+      "size": 8690,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/dc688b8b6d2464d664e2465327770e7424be915d"
+    },
+    {
+      "path": "dataset/train-test-split/search_target_pages_within_domain.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "531281f10cfb8fdcaeaec4442213ebc4b4c4840c",
+      "size": 9464,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/531281f10cfb8fdcaeaec4442213ebc4b4c4840c"
+    },
+    {
+      "path": "dataset/train-test-split/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c3d0dffe1485419435251771d5b12decbad9074",
+      "size": 25262,
+      "url": "https://api.github.com/repos/PhreshPhish/phreshphish/git/blobs/9c3d0dffe1485419435251771d5b12decbad9074"
+    }
+  ],
+  "truncated": false
+}

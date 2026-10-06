@@ -1,0 +1,333 @@
+#*****************************************Import********************************************
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+import warnings
+from sklearn.model_selection import cross_val_score
+from sklearn import metrics
+from sklearn import preprocessing
+import matplotlib.pyplot as plt
+warnings.filterwarnings('ignore')
+import time
+
+df=pd.read_csv("dataset/PhishingDataset.csv")
+
+ROWS = len(df.axes[0]) 
+COLUMNS = len(df.axes[1])
+df = df.replace([np.inf, -np.inf], np.nan)
+df=df.dropna()
+LABEL = df.iloc[:,-1:].columns[0]
+print("Row-Column Count before cleaning: (", ROWS , " , ",  COLUMNS , ")")
+
+df.iloc[:,-1:].value_counts()
+
+cols = df.select_dtypes(include=['float64','int64']).columns
+cols=cols.drop('URLSimilarityIndex')
+df = pd.DataFrame(df[cols]).copy()
+df = df.reset_index(drop=True)
+LABEL = df.iloc[:,-1:].columns[0]
+
+Train, Test=train_test_split(df,test_size=0.3, random_state=4)
+
+yTrain = pd.DataFrame(Train[LABEL]).copy()
+yTest = pd.DataFrame(Test[LABEL]).copy()
+
+Train.drop(LABEL, axis=1, inplace=True)
+Test.drop(LABEL, axis=1, inplace=True)
+
+xTrain = pd.DataFrame(Train).copy()
+xTest = pd.DataFrame(Test).copy()
+print("Finished Train-Test Split.")
+PERFORMANCE = pd.DataFrame(columns=['Model','Accuracy','Precision','Recall','F1Score','TrainingTime','PredictionTime'])
+
+from sklearn.naive_bayes import GaussianNB
+model = GaussianNB()
+
+start = time.time()
+n = len(yTrain.axes[0])
+for i in range(0,n):
+    try:
+        X = xTrain.iloc[[i]].to_numpy() 
+        Y = yTrain.iloc[[i]]
+        Y = np.array(Y[LABEL])
+        model.partial_fit(X, Y, classes=[0,1])        
+    except Exception as ex:
+        print(ex)
+
+end = time.time()
+trainTime = int(end - start)
+
+start = time.time()
+X = xTrain.to_numpy()
+Y = np.array(yTrain[LABEL])
+predict = model.predict(X)
+accuracy = metrics.accuracy_score(Y, predict)
+precision = metrics.precision_score(Y, predict)
+recall = metrics.recall_score(Y, predict)
+f1score = metrics.f1_score(Y, predict, zero_division=1)
+end = time.time()
+predictionTime = int(end - start)
+trainRow = {'Model':"GaussianNB_Training",'Accuracy':accuracy, 'Precision':precision, 'Recall':recall, 'F1Score':f1score,
+           'TrainingTime':trainTime,'PredictionTime':predictionTime}
+
+start = time.time()
+X = xTest.to_numpy()
+Y = np.array(yTest[LABEL])
+predict = model.predict(X)
+accuracy = metrics.accuracy_score(Y, predict)
+precision = metrics.precision_score(Y, predict)
+recall = metrics.recall_score(Y, predict)
+f1score = metrics.f1_score(Y, predict, zero_division=1)
+end = time.time()
+predictionTime = int(end - start)
+testRow = {'Model':"GaussianNB_Prediction",'Accuracy':accuracy, 'Precision':precision, 'Recall':recall, 'F1Score':f1score,
+           'TrainingTime':trainTime,'PredictionTime':predictionTime}
+
+print(trainRow)
+print(testRow)
+PERFORMANCE = PERFORMANCE.append(trainRow , ignore_index=True)
+PERFORMANCE = PERFORMANCE.append(testRow , ignore_index=True)
+
+from sklearn.naive_bayes import MultinomialNB
+model = MultinomialNB()
+
+start = time.time()
+n = len(yTrain.axes[0])
+for i in range(0,n):
+    try:
+        X = xTrain.iloc[[i]].to_numpy() 
+        Y = yTrain.iloc[[i]]
+        Y = np.array(Y[LABEL])
+        model.partial_fit(X, Y, classes=[0,1])        
+    except Exception as ex:
+        print(ex)
+
+end = time.time()
+trainTime = int(end - start)
+
+start = time.time()
+X = xTrain.to_numpy()
+Y = np.array(yTrain[LABEL])
+predict = model.predict(X)
+accuracy = metrics.accuracy_score(Y, predict)
+precision = metrics.precision_score(Y, predict)
+recall = metrics.recall_score(Y, predict)
+f1score = metrics.f1_score(Y, predict, zero_division=1)
+end = time.time()
+predictionTime = int(end - start)
+trainRow = {'Model':"MultinomialNB_Training",'Accuracy':accuracy, 'Precision':precision, 'Recall':recall, 'F1Score':f1score,
+           'TrainingTime':trainTime,'PredictionTime':predictionTime}
+
+start = time.time()
+X = xTest.to_numpy()
+Y = np.array(yTest[LABEL])
+predict = model.predict(X)
+accuracy = metrics.accuracy_score(Y, predict)
+precision = metrics.precision_score(Y, predict)
+recall = metrics.recall_score(Y, predict)
+f1score = metrics.f1_score(Y, predict, zero_division=1)
+end = time.time()
+predictionTime = int(end - start)
+testRow = {'Model':"MultinomialNB_Prediction",'Accuracy':accuracy, 'Precision':precision, 'Recall':recall, 'F1Score':f1score,
+           'TrainingTime':trainTime,'PredictionTime':predictionTime}
+
+print(trainRow)
+print(testRow)
+PERFORMANCE = PERFORMANCE.append(trainRow , ignore_index=True)
+PERFORMANCE = PERFORMANCE.append(testRow , ignore_index=True)
+
+from sklearn.naive_bayes import BernoulliNB
+model = BernoulliNB()
+
+start = time.time()
+n = len(yTrain.axes[0])
+for i in range(0,n):
+    try:
+        X = xTrain.iloc[[i]].to_numpy() 
+        Y = yTrain.iloc[[i]]
+        Y = np.array(Y[LABEL])
+        model.partial_fit(X, Y, classes=[0,1])        
+    except Exception as ex:
+        print(ex)
+
+end = time.time()
+trainTime = int(end - start)
+
+start = time.time()
+X = xTrain.to_numpy()
+Y = np.array(yTrain[LABEL])
+predict = model.predict(X)
+accuracy = metrics.accuracy_score(Y, predict)
+precision = metrics.precision_score(Y, predict)
+recall = metrics.recall_score(Y, predict)
+f1score = metrics.f1_score(Y, predict, zero_division=1)
+end = time.time()
+predictionTime = int(end - start)
+trainRow = {'Model':"BernoulliNB_Training",'Accuracy':accuracy, 'Precision':precision, 'Recall':recall, 'F1Score':f1score,
+           'TrainingTime':trainTime,'PredictionTime':predictionTime}
+
+start = time.time()
+X = xTest.to_numpy()
+Y = np.array(yTest[LABEL])
+predict = model.predict(X)
+accuracy = metrics.accuracy_score(Y, predict)
+precision = metrics.precision_score(Y, predict)
+recall = metrics.recall_score(Y, predict)
+f1score = metrics.f1_score(Y, predict, zero_division=1)
+end = time.time()
+predictionTime = int(end - start)
+testRow = {'Model':"BernoulliNB_Prediction",'Accuracy':accuracy, 'Precision':precision, 'Recall':recall, 'F1Score':f1score,
+           'TrainingTime':trainTime,'PredictionTime':predictionTime}
+
+print(trainRow)
+print(testRow)
+PERFORMANCE = PERFORMANCE.append(trainRow , ignore_index=True)
+PERFORMANCE = PERFORMANCE.append(testRow , ignore_index=True)
+
+from sklearn.linear_model import PassiveAggressiveClassifier
+model = PassiveAggressiveClassifier()
+
+start = time.time()
+n = len(yTrain.axes[0])
+for i in range(0,n):
+    try:
+        X = xTrain.iloc[[i]].to_numpy() 
+        Y = yTrain.iloc[[i]]
+        Y = np.array(Y[LABEL])
+        model.partial_fit(X, Y, classes=[0,1])        
+    except Exception as ex:
+        print(ex)
+
+end = time.time()
+trainTime = int(end - start)
+
+start = time.time()
+X = xTrain.to_numpy()
+Y = np.array(yTrain[LABEL])
+predict = model.predict(X)
+accuracy = metrics.accuracy_score(Y, predict)
+precision = metrics.precision_score(Y, predict)
+recall = metrics.recall_score(Y, predict)
+f1score = metrics.f1_score(Y, predict, zero_division=1)
+end = time.time()
+predictionTime = int(end - start)
+trainRow = {'Model':"PassiveAggressive_Training",'Accuracy':accuracy, 'Precision':precision, 'Recall':recall, 'F1Score':f1score,
+           'TrainingTime':trainTime,'PredictionTime':predictionTime}
+
+start = time.time()
+X = xTest.to_numpy()
+Y = np.array(yTest[LABEL])
+predict = model.predict(X)
+accuracy = metrics.accuracy_score(Y, predict)
+precision = metrics.precision_score(Y, predict)
+recall = metrics.recall_score(Y, predict)
+f1score = metrics.f1_score(Y, predict, zero_division=1)
+end = time.time()
+predictionTime = int(end - start)
+testRow = {'Model':"PassiveAggressive_Prediction",'Accuracy':accuracy, 'Precision':precision, 'Recall':recall, 'F1Score':f1score,
+           'TrainingTime':trainTime,'PredictionTime':predictionTime}
+
+print(trainRow)
+print(testRow)
+PERFORMANCE = PERFORMANCE.append(trainRow , ignore_index=True)
+PERFORMANCE = PERFORMANCE.append(testRow , ignore_index=True)
+
+from sklearn.linear_model import Perceptron
+model = Perceptron()
+
+start = time.time()
+n = len(yTrain.axes[0])
+for i in range(0,n):
+    try:
+        X = xTrain.iloc[[i]].to_numpy() 
+        Y = yTrain.iloc[[i]]
+        Y = np.array(Y[LABEL])
+        model.partial_fit(X, Y, classes=[0,1])        
+    except Exception as ex:
+        print(ex)
+
+end = time.time()
+trainTime = int(end - start)
+
+start = time.time()
+X = xTrain.to_numpy()
+Y = np.array(yTrain[LABEL])
+predict = model.predict(X)
+accuracy = metrics.accuracy_score(Y, predict)
+precision = metrics.precision_score(Y, predict)
+recall = metrics.recall_score(Y, predict)
+f1score = metrics.f1_score(Y, predict, zero_division=1)
+end = time.time()
+predictionTime = int(end - start)
+trainRow = {'Model':"Perceptron_Training",'Accuracy':accuracy, 'Precision':precision, 'Recall':recall, 'F1Score':f1score,
+           'TrainingTime':trainTime,'PredictionTime':predictionTime}
+
+start = time.time()
+X = xTest.to_numpy()
+Y = np.array(yTest[LABEL])
+predict = model.predict(X)
+accuracy = metrics.accuracy_score(Y, predict)
+precision = metrics.precision_score(Y, predict)
+recall = metrics.recall_score(Y, predict)
+f1score = metrics.f1_score(Y, predict, zero_division=1)
+end = time.time()
+predictionTime = int(end - start)
+testRow = {'Model':"Perceptron_Prediction",'Accuracy':accuracy, 'Precision':precision, 'Recall':recall, 'F1Score':f1score,
+           'TrainingTime':trainTime,'PredictionTime':predictionTime}
+
+print(trainRow)
+print(testRow)
+PERFORMANCE = PERFORMANCE.append(trainRow , ignore_index=True)
+PERFORMANCE = PERFORMANCE.append(testRow , ignore_index=True)
+
+from sklearn.linear_model import SGDClassifier
+model = SGDClassifier()
+
+start = time.time()
+n = len(yTrain.axes[0])
+for i in range(0,n):
+    try:
+        X = xTrain.iloc[[i]].to_numpy() 
+        Y = yTrain.iloc[[i]]
+        Y = np.array(Y[LABEL])
+        model.partial_fit(X, Y, classes=[0,1])        
+    except Exception as ex:
+        print(ex)
+
+end = time.time()
+trainTime = int(end - start)
+
+start = time.time()
+X = xTrain.to_numpy()
+Y = np.array(yTrain[LABEL])
+predict = model.predict(X)
+accuracy = metrics.accuracy_score(Y, predict)
+precision = metrics.precision_score(Y, predict)
+recall = metrics.recall_score(Y, predict)
+f1score = metrics.f1_score(Y, predict, zero_division=1)
+end = time.time()
+predictionTime = int(end - start)
+trainRow = {'Model':"SGDClassifier_Training",'Accuracy':accuracy, 'Precision':precision, 'Recall':recall, 'F1Score':f1score,
+           'TrainingTime':trainTime,'PredictionTime':predictionTime}
+
+start = time.time()
+X = xTest.to_numpy()
+Y = np.array(yTest[LABEL])
+predict = model.predict(X)
+accuracy = metrics.accuracy_score(Y, predict)
+precision = metrics.precision_score(Y, predict)
+recall = metrics.recall_score(Y, predict)
+f1score = metrics.f1_score(Y, predict, zero_division=1)
+end = time.time()
+predictionTime = int(end - start)
+testRow = {'Model':"SGDClassifier_Prediction",'Accuracy':accuracy, 'Precision':precision, 'Recall':recall, 'F1Score':f1score,
+           'TrainingTime':trainTime,'PredictionTime':predictionTime}
+
+print(trainRow)
+print(testRow)
+PERFORMANCE = PERFORMANCE.append(trainRow , ignore_index=True)
+PERFORMANCE = PERFORMANCE.append(testRow , ignore_index=True)
+
+PERFORMANCE.to_csv('dataset/ReportsMay19/P7_IdentifyClassifiersReport.csv',index = False)
+PERFORMANCE
+
